@@ -1,0 +1,80 @@
+body {
+  background-color: #b4ebd5;
+  font-size: 25px;
+  color: #045762;
+  font-family: "Mukta", sans-serif;
+}
+
+h1 {
+  font-family: "Calligraffitti", cursive;
+  padding-left: 236px;
+  padding-bottom: 50px;
+}
+
+li {
+  list-style: none;
+}
+
+.appcontainer {
+  margin: 50px 5% auto 5%;
+  background-color: aquamarine;
+  padding: 20px;
+  border-radius: 25px;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+.mainicon {
+  width: 100px;
+  margin: 20px;
+  margin-left: 33px;
+  margin-top: 0px;
+}
+
+.temp {
+  text-align: left;
+  margin-left: 70px;
+  margin-top: 0px;
+}
+
+.weekcontainer {
+  margin-top: 50px;
+  display: block;
+}
+
+.meteoday {
+  display: block;
+  position: relative;
+  left: 45px;
+}
+
+.temperature {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card {
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  margin: 0 auto;
+  height: 280px;
+  border-radius: 8px;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+.card-body {
+  padding: 15;
+  text-align: center;
+}
+
+.search {
+  line-height: 2;
+}
+
+.loupe {
+  size: 2px;
+}
+
+.currentPositionIcon:hover {
+  cursor: pointer;
+}
