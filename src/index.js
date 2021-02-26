@@ -31,7 +31,7 @@ let months = [
 ];
 let month = months[now.getMonth()];
 
-let datesentence = `Today, ${day} ${daynumber} ${month} ${year}, the weather in `;
+let datesentence = `${day} ${daynumber} ${month} ${year}`;
 let nowdate = document.querySelector("#nowdate");
 nowdate.innerHTML = datesentence;
 
@@ -44,7 +44,7 @@ let minutes = now.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }
-let timedisplay = `at ${hour}:${minutes}`;
+let timedisplay = `${hour}:${minutes}`;
 let currenttime = document.querySelector("#currenttime");
 currenttime.innerHTML = timedisplay;
 
