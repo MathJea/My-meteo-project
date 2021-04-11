@@ -56,6 +56,8 @@ function search(city) {
   axios.get(apiUrl).then(showTemperature);
 }
 
+// Display temperature
+
 function showTemperature(response) {
   document.querySelector("#newcity").innerHTML = response.data.name;
   document.querySelector("#temp").innerHTML = Math.round(
