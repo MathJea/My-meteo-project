@@ -58,10 +58,13 @@ function search(city) {
 
 // Display temperature
 
+
+
 function showTemperature(response) {
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#newcity").innerHTML = response.data.name;
   document.querySelector("#temp").innerHTML = Math.round(
-    response.data.main.temp
+    celsiusTemperature
   );
   document.querySelector("#humidity").innerHTML = Math.round(
     response.data.main.humidity
@@ -73,12 +76,25 @@ function showTemperature(response) {
     response.data.weather[0].main;
   document.querySelector("#icon").setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   }
-  
-  //let iconElement = document.querySelector("#icon");
 
- // iconElement.setAttribute(
-  //  "src",
-  //  `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
+  
+
+  // Convert C to F  
+
+  function displayfar(event){
+    event.preventDefault();
+    let tempelement = document.querySelector("#temp");
+    let fartemperature = (celsiusTemperature * 9 /5 +32);
+    tempelement.innerHTML = Math.round(fartemperature);
+  }
+
+  let celsiusTemperature = null;
+
+  let farlink = document.querySelector("#far");
+  farlink.addEventListener("click", displayfar);
+
+
 
 // HandleSubmit
 
@@ -98,7 +114,9 @@ function changecity(event) {
 
 let submitbutton = document.querySelector("#submitbutton");
 submitbutton.addEventListener("click", handleSubmit);
-city.addEventListener("submit", handleSubmit);
+
+let city = document.querySelector("#search-form");
+city.addEventListener("click", handleSubmit);
 
 //Current position
 

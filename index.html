@@ -29,19 +29,21 @@
 
          <div class="theWeatherIn">
             <p>
-            The weather in <span id="newcity">Milan</span> is
+            Today's weather in <span id="newcity">Milan</span> 
             </p>
         </div>
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-sm-12 test">
+                <div class="col-lg-4 col-sm-12 test">
                     <img class="mainicon" src="" id="icon" alt="">
                     <span class="meteoday" id="description"></span>
-                    <p class="temperature"><span id="temp"></span> <span><a href="#" id="cels">C°</a></span><a href="#"id="far"></a><span></span></p>
+                    
                 </div>
-
-                <div class="col-lg-6 col-sm-12 search test">
+<div class="col-lg-4 col-sm-12 search test">
+    <p class="temperature"><span id="temp"></span> <span class="cf"><a href="#" id="cels">C° | </a><a href="#" id="far">F°</a></span>
+</div>
+                <div class="col-lg-4 col-sm-12 der test">
                     <ul>
                         <li>Humidity : <span id="humidity"></span>%</li>
                         <li>Wind : <span id="wind"></span> km/h</li>
@@ -50,14 +52,17 @@
         </div>
            
 
-            <div class="notIn">
-                Not in Milan?
+          
+                <form id="search-form">
+                    <div class="notIn">
+                        Not in Milan?
                 <input type="text" id="yourcity" placeholder="Type your city" />
                 <input type="submit" id="submitbutton" placeholder="Submit" />
+               
                 <span class="textCurrentPostion">Current position</span>
                 <img src="src/placeholder.svg" id="currentPosition" class="currentPositionIcon" alt="" width="50p">
             </div>
-
+</form>
 
     
 

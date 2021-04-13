@@ -24,6 +24,15 @@ h1 {
 
 .test {
   text-align: center;
+  padding: 2.5%;
+}
+
+.der {
+  padding-top: 3.5%;
+}
+
+.cf {
+  padding-bottom: 3%;
 }
 li {
   list-style: none;
@@ -49,6 +58,7 @@ li {
   text-align: left;
   margin-left: 70px;
   margin-top: 0px;
+  font-size: 5rem;
 }
 
 .weekcontainer {
@@ -64,9 +74,6 @@ li {
 
 .notIn {
   text-align: center;
-}
-.temperature {
-  font-size: 2rem;
 }
 
 .notIn {
@@ -89,10 +96,6 @@ li {
   text-align: center;
 }
 
-.search {
-  line-height: 2;
-}
-
 .loupe {
   size: 2px;
 }
@@ -105,4 +108,8 @@ li {
   text-align: center;
   padding: 1%;
   font-size: smaller;
+}
+
+#temp {
+  font-size: 5rem;
 }
