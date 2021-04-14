@@ -89,12 +89,21 @@ function showTemperature(response) {
     tempelement.innerHTML = Math.round(fartemperature);
   }
 
+   function displaycel(event){
+    event.preventDefault();
+    let tempelement = document.querySelector("#temp");
+    tempelement.innerHTML = Math.round(celsiusTemperature);
+  }
+
+ 
+
   let celsiusTemperature = null;
 
   let farlink = document.querySelector("#far");
   farlink.addEventListener("click", displayfar);
 
-
+let celslink = document.querySelector("#cels");
+celslink.addEventListener("click", displaycel);
 
 // HandleSubmit
 

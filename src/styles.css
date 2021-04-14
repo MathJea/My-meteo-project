@@ -31,9 +31,12 @@ h1 {
   padding-top: 3.5%;
 }
 
-.cf {
+.linktemp {
   padding-bottom: 3%;
+  color: #045762;
+  text-decoration: none;
 }
+
 li {
   list-style: none;
 }
